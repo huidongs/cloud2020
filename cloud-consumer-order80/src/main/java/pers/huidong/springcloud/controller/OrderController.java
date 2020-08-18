@@ -25,7 +25,7 @@ public class OrderController {
     @Resource
     private RestTemplate restTemplate;
 
-    @GetMapping("/consumer/payment/create")
+    @PostMapping("/consumer/payment/create")
     public CommonResult<Payment> create(Payment payment){
 
         return  restTemplate.postForObject(PAYMENT_URL+"/payment/create",payment,CommonResult.class);
@@ -34,6 +34,7 @@ public class OrderController {
     @GetMapping("/consumer/payment/get/{id}")
     public CommonResult<Payment> getPayment(@PathVariable("id")Long id){
 
+        //getForObject()其实比getForEntity()多包含了将HTTP转成POJO的功能，但是getForObject没有处理response的能力。因为它拿到手的就是成型的pojo。省略了很多response的信息。
         return restTemplate.getForObject(PAYMENT_URL+"/payment/get/"+id,CommonResult.class);
     }
 }
