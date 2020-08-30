@@ -7,13 +7,13 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * @Author: HuiDong XU
  * @Description:
- * @Date: 2020/8/23 23:22
+ * @Date: 2020/8/30 20:20
  * @Version: 1.0
  */
 @SpringBootApplication
-@EnableDiscoveryClient //该注解用于向使用consul或者zookeeper作为注册中心时注册服务
-public class PaymentMain8004 {
+@EnableDiscoveryClient
+public class PaymentMain8006 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8004.class,args);
+        SpringApplication.run(PaymentMain8006.class,args);
     }
 }
