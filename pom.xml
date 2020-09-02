@@ -18,6 +18,7 @@
         <module>cloud-consumerzk-order80</module>
         <module>cloud-provideconsul-payment8006</module>
         <module>cloud-consumerconsul-order80</module>
+        <module>cloud-eureka-server7002</module>
     </modules>
 
 <!--    统一管理jar包版本-->
@@ -37,18 +38,18 @@
     <dependencyManagement>
         <dependencies>
 <!--            系统自动匹配合适版本-->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-dependencies</artifactId>-->
+<!--                <version>Finchley.RELEASE</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
 <!--            spring boot 2.2.2 RELEASE-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.2.2.RELEASE</version>
+                <version>2.2.9.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
