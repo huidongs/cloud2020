@@ -2,7 +2,7 @@ server:
   port: 80
 spring:
   application:
-    name: cloud-consumer-service
+    name: cloud-order-service
 eureka:
   client:
     service-url:
