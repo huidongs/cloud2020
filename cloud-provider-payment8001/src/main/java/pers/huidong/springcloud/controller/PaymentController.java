@@ -65,6 +65,11 @@ public class PaymentController {
         return serverPort;
     }
 
+    @GetMapping(value = "/payment/lb")
+    public String getPaymentLB(){
+        return serverPort;
+    }
+
 //    public Object discovery(){
 //
 //        Set<String> allKnownRegions = discoveryClient.getAllKnownRegions();

@@ -14,7 +14,7 @@ import pers.huidong.springcloud.entities.Payment;
 @Mapper
 public interface PaymentDao {
 
-    public int create(Payment payment);
+    int create(Payment payment);
 
-    public Payment getPaymentById(@Param("id")Long id);
+    Payment getPaymentById(@Param("id")Long id);
 }
