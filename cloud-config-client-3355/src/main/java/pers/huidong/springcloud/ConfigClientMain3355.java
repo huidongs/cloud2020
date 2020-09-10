@@ -2,21 +2,15 @@ package pers.huidong.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-
 /**
- * @Author: HuiDong XU
- * @Description:
- * @Date: 2020/8/16 18:58
- * @Version: 1.0
+ * @Desc:
  */
-@SpringBootApplication
 @EnableEurekaClient
-@EnableDiscoveryClient
-public class PaymentMain8001 {
+@SpringBootApplication
+public class ConfigClientMain3355 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8001.class,args);
+        SpringApplication.run(ConfigClientMain3355.class, args);
     }
 }
