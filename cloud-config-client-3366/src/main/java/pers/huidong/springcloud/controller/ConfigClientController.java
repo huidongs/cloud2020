@@ -6,19 +6,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Desc:
+ * @Author: HuiDong XU
+ * @Description:
+ * @Date: 2020/9/11 21:15
+ * @Version: 1.0
  */
 @RestController
-@RefreshScope   //curl -X POST "http://localhost:3355/actuator/refresh"    //bus-refresh
+@RefreshScope   //curl -X POST "http://localhost:3355/actuator/refresh"
 public class ConfigClientController {
-
-    @Value(("${server.port}"))
-    private String serverPort;
     @Value(("${config.info}"))
     private String configInfo;
 
     @GetMapping("/configInfo")
     public String getConfigInfo(){
-        return "serverPort:"+serverPort+"\t\n\n configInfo:"+configInfo;
+        return configInfo;
     }
 }
