@@ -22,6 +22,9 @@
         <module>cloud-provider-payment8002</module>
         <module>cloud-consumer-feign-order80</module>
         <module>cloud-provider-hystrix-payment8001</module>
+        <module>cloud-stream-rabbitmq-provider8801</module>
+        <module>cloud-stream-rabbitmq-provider8802</module>
+        <module>cloud-stream-rabbitmq-consumer8803</module>
     </modules>
 
 <!--    统一管理jar包版本-->
