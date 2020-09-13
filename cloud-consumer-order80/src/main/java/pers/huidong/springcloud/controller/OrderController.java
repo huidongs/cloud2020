@@ -23,6 +23,7 @@ import javax.annotation.Resource;
 public class OrderController {
     //    private static final String PAYMENT_URL = "http://localhost:8001";
     private static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+    //private static final String PAYMENT_URL_ZIPKIN = "http://localhost:8001";
 
     @Resource
     private RestTemplate restTemplate;
@@ -49,4 +50,8 @@ public class OrderController {
 //            return new CommonResult<>(444,"操作失败");
 //        }
 //    }
+    @GetMapping(value = "/consumer/payment/zipkin")
+    public String paymentZipkin(){
+        return restTemplate.getForObject(PAYMENT_URL + "/payment/zipkin/" , String.class);
+    }
 }
