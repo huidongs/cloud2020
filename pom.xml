@@ -23,8 +23,11 @@
         <module>cloud-consumer-feign-order80</module>
         <module>cloud-provider-hystrix-payment8001</module>
         <module>cloud-stream-rabbitmq-provider8801</module>
-        <module>cloud-stream-rabbitmq-provider8802</module>
+        <module>cloud-stream-rabbitmq-consumer8802</module>
         <module>cloud-stream-rabbitmq-consumer8803</module>
+        <module>cloudalibaba-provider-payment9001</module>
+        <module>cloudalibaba-provider-payment9002</module>
+        <module>cloudalibaba-comsumer-nacos-order83</module>
     </modules>
 
 <!--    统一管理jar包版本-->
@@ -66,7 +69,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-<!--            spring cloud alibaba 2.2.0 RELEASE -->
+<!--            spring cloud alibaba 2.1.0 RELEASE -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
