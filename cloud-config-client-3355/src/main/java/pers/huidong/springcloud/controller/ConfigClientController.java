@@ -21,4 +21,5 @@ public class ConfigClientController {
     public String getConfigInfo(){
         return "serverPort:"+serverPort+"\t\n\n configInfo:"+configInfo;
     }
+
 }
