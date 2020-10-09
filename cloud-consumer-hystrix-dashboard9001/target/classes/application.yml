@@ -1,0 +1,15 @@
+server:
+  port: 9001
+#spring:
+#  application:
+#    name: cloud-provider-hystrix-service
+#eureka:
+#  client:
+#    service-url:
+##      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+#      defaultZone: http://eureka7001.com:7001/eureka
+#    register-with-eureka: true  #表示是否将自己注册进EurekaServer，默认为true
+#    fetch-registry: true   #是否从EurekaServer抓取已有的注册信息，默认true，单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
+#  instance:
+#    instance-id: payment8001  #修改主机名称
+#    prefer-ip-address: true   #显示ip
