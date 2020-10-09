@@ -1,0 +1,32 @@
+package pers.huidong.springcloud.alibaba.service.impl;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import pers.huidong.springcloud.alibaba.dao.AccountDao;
+import pers.huidong.springcloud.alibaba.service.AccountService;
+
+import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
+
+/**
+ * @Desc:
+ */
+@Service
+@Slf4j
+public class AccountServiceImpl implements AccountService {
+
+    @Resource
+    private AccountDao accountDao;
+    @Override
+    public void decrease(Integer userId, Integer money) {
+        log.info("----扣减账户开始");
+        //模拟超时异常，全局事务回滚
+//        try {
+//            TimeUnit.SECONDS.sleep(20);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+        accountDao.decrease(userId,money);
+        log.info("----扣减账户结束");
+    }
+}

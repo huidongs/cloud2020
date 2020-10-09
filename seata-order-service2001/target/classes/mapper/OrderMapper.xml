@@ -11,11 +11,11 @@
     </resultMap>
 
     <insert id="create" >
-        insert into order_tbl(id,user_id,commodity_code,count,money,status) value(null,#{user_id},#{commodity_code},#{count},#{money},0)
+        insert into order_tbl(id,user_id,commodity_code,count,money,status) value(null,#{userId},#{commodityCode},#{count},#{money},0)
     </insert>
 
     <update id="update">
-        update order_tbl set status = 1 where user_id=#{userId} and status= #{status};
+        update order_tbl set status = #{status} where user_id=#{userId} and status= 0;
     </update>
 
 </mapper>

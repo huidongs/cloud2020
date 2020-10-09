@@ -9,16 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>seata-order-service2001</artifactId>
-
+    <artifactId>seata-account-service2002</artifactId>
 
     <dependencies>
-        <!--通用-->
-<!--        <dependency>-->
-<!--            <groupId>org.example</groupId>-->
-<!--            <artifactId>cloud-api-commons</artifactId>-->
-<!--            <version>${project.version}</version>-->
-<!--        </dependency>-->
         <!--nacos-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -83,4 +76,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 </project>
